@@ -296,7 +296,7 @@ def il_tara(driver_path, bolge, il, arama_listesi):
                     EC.presence_of_element_located((By.CSS_SELECTOR, 'div[role="feed"]'))
                 )
             except Exception:
-                print(f"    -> Liste yüklenemedi, sonraki aramaya geçiliyor.")
+                print("    -> Liste yüklenemedi, sonraki aramaya geçiliyor.")
                 continue
 
             last_height = driver.execute_script("return arguments[0].scrollHeight", scrollable_div)
